@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: serif;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.1;
+    color: #222;
+}
+
+.sara {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    padding: 0 8px;
+}
+
+.sara::before {
+    content: "";
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translate(-50%, -45%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2f9ab0;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+header {
+    background: white;
+    color: #fff;
+    padding: 4rem 2rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: #222 solid;
+
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#2f9ab0;
+  padding: 15px 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  color: #007bff;
+}
+.containerlog{
+    margin-top: 70px;
+
+}
+.usernam{
+    margin-bottom:20px;
+    font-size: 15px;
+    
+
+}
+
+
+.password{
+    margin-bottom:20px ;
+    
+    
+}
+  label {
+  font-size: 2rem;
+  
+  
+
+}
+input {
+  width: 400px;
+  padding: 10px;
+  background-color:#2f9ab0;
+  color: white;
+  font-size: 1rem;
+  margin: auto;
+ 
+}
+.donthave{
+    margin-bottom: 10px;
+    font-style: oblique;
+    
+    
+}
+
+
+button{
+   
+  padding: 10px 20px;
+  background-color:#2f9ab0;
+  border-radius: 60px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-left: 2rem;
+
+}
+
+ form{
+    margin:10rem 15rem 15rem 15rem;
+
+
+ }
+
+ 
+
+
+
+
+
+footer {
+    background-color: #2f9ab0;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2.5rem;
+    border-top: 4px solid #748ad4;
+  
+    
+}
+
+footer p {
+    margin: 0.5rem 0;
+    
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    header p {
+        font-size: 2rem;
+        border-style: double;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: oblique;
+        color: #2c2c2c;
+    }
+    
+}
+

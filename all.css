@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: serif;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.1;
+    color: #222;
+}
+
+.sara {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    padding: 0 8px;
+}
+
+.sara::before {
+    content: "";
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translate(-50%, -45%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #2f9ab0;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+header {
+    background: white;
+    color: #fff;
+    padding: 4rem 2rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#2f9ab0;
+  padding: 15px 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  color: #007bff;
+}
+.recentlyadded-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.recentlyadded-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recentlyadded-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.recentlyadded-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #333;
+    font-family: sans-serif;
+}
+
+
+.recentlyadded-card-content h3,
+.recentlyadded-card-content h4 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.recentlyadded-card-content h3 {
+    font-weight: bold;
+    margin: auto;
+}
+
+
+
+   
+.recentlyadded-card img {
+  width: 200px; 
+  height: auto;
+  margin-right: 20px; 
+  border-radius: 8px; 
+}
+
+.recentlyadded-card-content h3 {
+  font-size: 28px; 
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.recentlyadded-card-content h4 {
+  font-size: 20px;
+  color: #555;
+  margin: 5px 0 0 0;
+  text-transform: capitalize;
+}
+
+
+
+
+
+
+footer {
+    background-color: #2f9ab0;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2.5rem;
+    border-top: 4px solid #748ad4;
+  
+    
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    header p {
+        font-size: 2rem;
+        border-style: double;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: oblique;
+        color: #2c2c2c;
+    }
+    
+}
